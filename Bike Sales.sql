@@ -88,17 +88,17 @@ order by ord.order_id asc
 
 -- 
 select ord.order_id,
-	   customers = concat(cus.first_name, ' ', cus.last_name),
-	   staff_members = concat(sta.first_name, ' ', sta.last_name),
-	   cus.city,
-	   cus.state,
-	   sto.store_name,
-	   pro.product_name,
-	   cat.category_name,
-	   ord.order_date,
-	   clu.day_of_week_name,
-	   total_units = sum(itm.quantity),
-	   revenue = sum(itm.quantity * pro.list_price)
+       customers = concat(cus.first_name, ' ', cus.last_name),
+       staff_members = concat(sta.first_name, ' ', sta.last_name),
+       cus.city,	   
+       cus.state,
+       sto.store_name,
+       pro.product_name,
+       cat.category_name,
+       ord.order_date,
+       clu.day_of_week_name,
+       total_units = sum(itm.quantity),
+       revenue = sum(itm.quantity * pro.list_price)
 from sales.customers cus
 join sales.orders ord
 on cus.customer_id = ord.customer_id
@@ -113,15 +113,14 @@ on itm.product_id = pro.product_id
 join production.categories cat
 on pro.category_id = cat.category_id
 join CalenderLookUp clu
-on ord.shipped_date = clu.Date
-where year(ord.shipped_date) = 2018
+on ord.order_date = clu.Date
 group by ord.order_id,
-	     concat(cus.first_name, ' ', cus.last_name),
-		 concat(sta.first_name, ' ', sta.last_name),
-	     cus.city,
-	     cus.state,
-		 sto.store_name,
-	     pro.product_name,
-	     cat.category_name,
-	     ord.order_date,
-	     clu.day_of_week_name
+         concat(cus.first_name, ' ', cus.last_name),
+	 concat(sta.first_name, ' ', sta.last_name),
+         cus.city,
+         cus.state,
+	 sto.store_name,
+         pro.product_name,
+         cat.category_name,
+         ord.order_date,
+         clu.day_of_week_name
