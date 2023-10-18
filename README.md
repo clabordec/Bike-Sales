@@ -22,7 +22,7 @@ In this project I will create a comprehensive sales dashboard for the executive 
 
 
 ### Understading the Problem
-I need to know exactly what management wants, in this case, they want to know the condition of the sales activities within the company and gain insights into the various trends happening in the sales volume over the 2016 to 2018 period,
+I need to know exactly what management wants, in this case, they want to know the condition of the sales activities within the company and gain insights into the various trends happening in the sales volume over the 2016 to 2018 period.
 
 The information that management would like to view:
    - The revenus per region
