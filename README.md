@@ -5,8 +5,10 @@ In this project I will create a comprehensive sales dashboard for the executive 
 <br>
 
 ### Project Overview
-1. Enter into the company's relational database by creating SQL script to generate a detailed dataset that provides me with all of the information that I need to help start the process of creating a comprehensive and dynamic sales dashboard for the executive team <br>
-2. Import the SQL generated dataset into Excel, and use Pivot Tables to generate a dynamic dashboard <br>
+1. Enter into the company's relational database by creating SQL script to generate a detailed dataset that provides me with all of the information that I need to help start the process of creating a comprehensive and dynamic sales dashboard for the executive team
+   
+2. Import the SQL generated dataset into Excel, and use Pivot Tables to generate a dynamic dashboard
+   
 3. I will then connect the Excel datasheet that contains the SQL generated dataset to Tableau and use the information to generate a visually pleasing dashboard for management <br>
 
 <br>
