@@ -90,9 +90,10 @@ order by ord.order_id asc
 select ord.order_id,
        customers = concat(cus.first_name, ' ', cus.last_name),
        staff_members = concat(sta.first_name, ' ', sta.last_name),
-       cus.city,	   
+       cus.city,
        cus.state,
        sto.store_name,
+       brd.brand_name,
        pro.product_name,
        cat.category_name,
        ord.order_date,
@@ -112,14 +113,17 @@ join production.products pro
 on itm.product_id = pro.product_id
 join production.categories cat
 on pro.category_id = cat.category_id
+join production.brands brd
+on pro.brand_id = brd.brand_id
 join CalenderLookUp clu
 on ord.order_date = clu.Date
 group by ord.order_id,
          concat(cus.first_name, ' ', cus.last_name),
-	 concat(sta.first_name, ' ', sta.last_name),
+         concat(sta.first_name, ' ', sta.last_name),
          cus.city,
          cus.state,
-	 sto.store_name,
+         sto.store_name,
+         brd.brand_name,
          pro.product_name,
          cat.category_name,
          ord.order_date,
