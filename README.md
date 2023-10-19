@@ -31,3 +31,6 @@ The information that management would like to view:
    - The revenus per brand
 
 A list of the top customers and sales reps could also prove to be beneficial
+
+Tableau Dashboards
+
