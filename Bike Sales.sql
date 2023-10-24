@@ -14,6 +14,7 @@ CREATE TABLE [BikeStores].[dbo].[CalenderLookUp] (
 )
 GO
 
+-- Automate the first column of the look up table, in this case the "Date" column 
 WITH Dates AS (
 	SELECT CAST('01-01-2011' AS DATE) AS DateValues
 
