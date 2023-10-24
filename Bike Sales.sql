@@ -1,7 +1,7 @@
 USE [BikeStores]
 GO
 
--- 
+-- Create a calender lookup table to get better insights with detailed dates 
 CREATE TABLE [BikeStores].[dbo].[CalenderLookUp] (
 	[Date] DATE,
 	day_of_week_number INT,
