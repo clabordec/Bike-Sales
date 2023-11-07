@@ -30,7 +30,7 @@ SELECT * FROM Dates OPTION(MAXRECURSION 10000)
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
--- 
+-- Populate each column from the data inside of the "Date"
 UPDATE [BikeStores].[dbo].[CalenderLookUp]
 SET day_of_week_number = DATEPART(DAY, Date),
     day_of_week_name = FORMAT(Date, 'dddd'),
@@ -38,6 +38,7 @@ SET day_of_week_number = DATEPART(DAY, Date),
     month_number = MONTH(Date),
     year_number = YEAR(Date)
 
+-- Check the records
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
