@@ -70,23 +70,18 @@ SET holiday_flag = CASE WHEN MONTH(Date) = 1 AND DAY(Date) = 1 THEN 1
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
--- 
+-- Check records in the production schema
 select * from production.brands
 select * from production.categories
 select * from production.products
 select * from production.stocks
 
--- 
+-- Check records in the sales schema
 select * from sales.customers
 select * from sales.orders
 select * from sales.order_items
 select * from sales.staffs
 select * from sales.stores
-
-select * from sales.customers cus
-join sales.orders ord
-on cus.customer_id = ord.customer_id
-order by ord.order_id asc
 
 
 -- 
