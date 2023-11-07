@@ -33,10 +33,10 @@ SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 -- 
 UPDATE [BikeStores].[dbo].[CalenderLookUp]
 SET day_of_week_number = DATEPART(DAY, Date),
-	day_of_week_name = FORMAT(Date, 'dddd'),
-	day_of_month_number = DAY(Date),
-	month_number = MONTH(Date),
-	year_number = YEAR(Date)
+    day_of_week_name = FORMAT(Date, 'dddd'),
+    day_of_month_number = DAY(Date),
+    month_number = MONTH(Date),
+    year_number = YEAR(Date)
 
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
@@ -51,18 +51,18 @@ SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 -- 
 UPDATE [BikeStores].[dbo].[CalenderLookUp]
 SET holiday_flag = CASE WHEN MONTH(Date) = 1 AND DAY(Date) = 1 THEN 1 
-					    WHEN MONTH(Date) = 1 AND DAY(Date) = 3 THEN 1
-					    WHEN MONTH(Date) = 2 AND DAY(Date) = 3 THEN 1
-					    WHEN MONTH(Date) = 5 AND DAY(Date) = 27 THEN 1
-					    WHEN MONTH(Date) = 6 AND DAY(Date) = 19 THEN 1
-					    WHEN MONTH(Date) = 7 AND DAY(Date) = 4 THEN 1
-					    WHEN MONTH(Date) = 9 AND DAY(Date) = 1 THEN 1
-					    WHEN MONTH(Date) = 10 AND DAY(Date) = 2 THEN 1
-					    WHEN MONTH(Date) = 11 AND DAY(Date) = 11 THEN 1
-					    WHEN MONTH(Date) = 11 AND DAY(Date) = 4 THEN 1
-					    WHEN MONTH(Date) = 12 AND DAY(Date) = 25 THEN 1
-					    ELSE 0 
-				  END
+			WHEN MONTH(Date) = 1 AND DAY(Date) = 3 THEN 1
+			WHEN MONTH(Date) = 2 AND DAY(Date) = 3 THEN 1
+			WHEN MONTH(Date) = 5 AND DAY(Date) = 27 THEN 1
+			WHEN MONTH(Date) = 6 AND DAY(Date) = 19 THEN 1
+			WHEN MONTH(Date) = 7 AND DAY(Date) = 4 THEN 1
+			WHEN MONTH(Date) = 9 AND DAY(Date) = 1 THEN 1
+			WHEN MONTH(Date) = 10 AND DAY(Date) = 2 THEN 1
+			WHEN MONTH(Date) = 11 AND DAY(Date) = 11 THEN 1
+			WHEN MONTH(Date) = 11 AND DAY(Date) = 4 THEN 1
+			WHEN MONTH(Date) = 12 AND DAY(Date) = 25 THEN 1
+			ELSE 0 
+		   END
 
 
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
