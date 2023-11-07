@@ -38,7 +38,7 @@ SET day_of_week_number = DATEPART(DAY, Date),
     month_number = MONTH(Date),
     year_number = YEAR(Date)
 
--- Check the records
+-- Check the results
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
