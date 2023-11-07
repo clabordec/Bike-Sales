@@ -42,14 +42,14 @@ SET day_of_week_number = DATEPART(DAY, Date),
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
--- 
+-- Populate information into the weekend_flag column to indicate if the day is a weekend or not
 UPDATE [BikeStores].[dbo].[CalenderLookUp]
 SET weekend_flag = CASE WHEN day_of_week_name IN ('Saturday', 'Sunday') THEN 1 ELSE 0 END
 
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
--- 
+-- Populate information into the holiday_flag column to indicate if the day is a holiday or not
 UPDATE [BikeStores].[dbo].[CalenderLookUp]
 SET holiday_flag = CASE WHEN MONTH(Date) = 1 AND DAY(Date) = 1 THEN 1 
 			WHEN MONTH(Date) = 1 AND DAY(Date) = 3 THEN 1
@@ -66,6 +66,7 @@ SET holiday_flag = CASE WHEN MONTH(Date) = 1 AND DAY(Date) = 1 THEN 1
 		   END
 
 
+-- Check the results
 SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
