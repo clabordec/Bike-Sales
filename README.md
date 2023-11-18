@@ -1,6 +1,6 @@
 # Bike Sales Project
 
-In this project I will create a comprehensive sales dashboard for the executive team at the bicycle retail company that I've partnered with from my internship. First, I will pull out the relevant data from the companies database using SQL Server, then I will design a well-structured and dynamic dashboard using Excel and Tableau
+In this project I have created a comprehensive sales dashboard for the executive team at the bicycle retail company that I've partnered with from my internship. First, I put out the relevant data from the companies database using SQL Server, then I designed a well-structured and dynamic dashboard using Excel and Tableau.
 
 <br>
 
