@@ -32,5 +32,5 @@ The information that management would like to view:
 
 A list of the top customers and sales reps could also prove to be beneficial
 
-Tableau Dashboards
+Power BI Dashboards
 
