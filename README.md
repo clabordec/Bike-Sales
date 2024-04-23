@@ -35,5 +35,7 @@ A list of the top customers and sales reps could also prove to be beneficial
 <br>
 
 ### Tools Used
-
+- Exce
+- Microsoft SQL Server
+- Tableau
 
