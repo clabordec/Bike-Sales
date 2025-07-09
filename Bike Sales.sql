@@ -71,21 +71,21 @@ SELECT * FROM [BikeStores].[dbo].[CalenderLookUp]
 
 
 -- Check records in the production schema
-select * from production.brands
-select * from production.categories
-select * from production.products
-select * from production.stocks
+SELECT * from production.brands
+SELECT * from production.categories
+SELECT * from production.products
+SELECT * from production.stocks
 
 -- Check records in the sales schema
-select * from sales.customers
-select * from sales.orders
-select * from sales.order_items
-select * from sales.staffs
-select * from sales.stores
+SELECT * from sales.customers
+SELECT * from sales.orders
+SELECT * from sales.order_items
+SELECT * from sales.staffs
+SELECT * from sales.stores
 
 
 -- 
-select ord.order_id,
+SELECT ord.order_id,
        customers = concat(cus.first_name, ' ', cus.last_name),
        staff_members = concat(sta.first_name, ' ', sta.last_name),
        cus.city,
