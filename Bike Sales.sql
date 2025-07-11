@@ -63,7 +63,7 @@ SET holiday_flag = CASE WHEN MONTH(Date) = 1 AND DAY(Date) = 1 THEN 1
 			WHEN MONTH(Date) = 11 AND DAY(Date) = 4 THEN 1
 			WHEN MONTH(Date) = 12 AND DAY(Date) = 25 THEN 1
 			ELSE 0 
-		   END
+		    END
 
 
 -- Check the results
